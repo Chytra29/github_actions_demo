@@ -10,4 +10,4 @@ jobs:
       - name: Print goodbye
         run: echo "Done - bye!"
       - name: Beautiful message
-        run: echo "Live Life Easy"
+        run: echo "Live Life Easy ....."
