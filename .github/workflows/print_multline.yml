@@ -1,4 +1,4 @@
-name: Multline print statement
+name: Modify multiline
 on: workflow_dispatch
 jobs:
     multiprintjob:
