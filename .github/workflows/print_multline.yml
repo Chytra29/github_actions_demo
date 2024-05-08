@@ -9,7 +9,9 @@ jobs:
                     echo "Line 1"
                     echo "Line 2"
             - name: Testing Greeting
-              run:  echo "Happy Learning" 
+              run:  echo "Happy Learning"
+            - name: Testing Bye
+              run:  echo "Have a nice day .........................................." 
               
     
 
