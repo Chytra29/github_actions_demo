@@ -7,7 +7,7 @@ jobs:
             - name: Multilineprint
               run:  | 
                     echo "Line 1"
-                    ehco "Line 2"
+                    echo "Line 2"
             - name: Testing Greeting
               run:  echo "Happy Learning" 
               
