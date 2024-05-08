@@ -1,4 +1,4 @@
-ame: Create issue on commit
+name: Create issue on commit
 
 on: [ push ]
 
