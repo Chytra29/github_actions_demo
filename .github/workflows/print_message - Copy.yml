@@ -1,0 +1,15 @@
+name: Multline print statement
+on: workflow_dispatch
+jobs:
+    multiprintjob:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Multilineprint
+              run:  | 
+                    echo "Line 1"
+                    echo "Line 2"
+            - name: Testing Greeting
+              run:  echo "Happy Learning" 
+              
+    
+
