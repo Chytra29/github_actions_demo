@@ -1,0 +1,17 @@
+name: Open Issues using gh 
+on:  workflow_dispatch
+jobs:
+  open-issue:
+    name: Create an issue using gh cli
+    runs-on: ubuntu-latest
+    permissions:
+       contents: read
+       issues: write
+    steps:
+      - name: Executing the gh cli to create issues
+        run: |
+          gh issue --repo ${{ github.repository }} \
+            create --title "Issue title" --body "Issue body"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
