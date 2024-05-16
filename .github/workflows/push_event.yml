@@ -1,1 +1,15 @@
-
+name: Test push and PR event
+on:  
+  push:
+    branches:
+      -  main
+      -  dev
+  pull_request:
+    branches:
+      - main
+jobs:
+  testevent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test event
+        run: echo $HI
