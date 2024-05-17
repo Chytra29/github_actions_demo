@@ -1,5 +1,7 @@
 name: envvars
 on:  [push]
+env:
+  workflowvar: Welcome
 jobs:
   myjob:
     runs-on: ubuntu-latest
@@ -8,4 +10,6 @@ jobs:
     steps:
       - name: PRINT
         run: echo $var
+      - name:  access workflow var
+        run: echo $workflowvar
   
