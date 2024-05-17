@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -  name: setting env vars
-         run: echo "$MY_VAL =123" >> $GITHUB_ENV
+         run: echo "MY_VAL =123" >> $GITHUB_ENV
       -  name: print the val
          run:  echo $MY_VAL
     
