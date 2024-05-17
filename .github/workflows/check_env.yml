@@ -8,5 +8,5 @@ jobs:
       -  name: setting env vars
          run: echo "$MY_VAL =123" >> $GITHUB_ENV
       -  name: print the val
-         run:  echo ${{ env.MY_VAL }}
+         run:  echo ${{ MY_VAL }}
     
