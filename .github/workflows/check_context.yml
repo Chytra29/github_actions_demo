@@ -1,0 +1,17 @@
+name: envvars
+on:  [push]
+env:
+  workflowvar: ${{ github.repository }}
+jobs:
+  myjob:
+    runs-on: ubuntu-latest
+    env:
+      var: Helloword
+    steps:
+      - name: PRINT
+        run: echo $var
+      - name:  access workflow var
+        run: echo $workflowvar 
+       
+        
+  
