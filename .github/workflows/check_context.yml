@@ -1,7 +1,7 @@
 name: envvars
 on:  [push]
 env:
-  workflowvar: ${{ github.repository }}
+  workflowvar: ${{ github.actor }}
 jobs:
   myjob:
     runs-on: ubuntu-latest
