@@ -1,0 +1,11 @@
+name: envvars
+on:  [push]
+jobs:
+  myjob:
+    runs-on: ubuntu-latest
+    env:
+      var: Helloword
+    steps:
+      - name: PRINT
+        run: echo $var
+  
