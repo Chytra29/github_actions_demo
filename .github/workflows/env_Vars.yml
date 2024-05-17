@@ -11,5 +11,8 @@ jobs:
       - name: PRINT
         run: echo $var
       - name:  access workflow var
-        run: echo $workflowvar
+        run: echo $workflowvar $stepsvar
+        env:
+          temp: stepsvar
+        
   
