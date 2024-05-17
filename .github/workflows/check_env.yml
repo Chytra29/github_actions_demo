@@ -1,0 +1,12 @@
+
+name: check env
+on: [push]
+jobs:
+  check_Env:
+    runs-on: ubuntu-latest
+    steps:
+      -  name: setting env vars
+         run: echo "$MY_VAL =123" >> $GITHUB_ENV
+      -  name: print the val
+         run:  echo $GITHUB_ENV
+    
