@@ -1,0 +1,14 @@
+name: ouyput vars demp
+on:  [push]
+jobs:
+  myjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PRINT
+        id: printvar
+        run: echo "temp = actions " >> $GITHUB_OUTPUT
+      - name:  print the output
+        run: echo ${{ steps.printvar.outputs.temp }}
+       
+        
+  
