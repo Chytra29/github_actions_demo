@@ -8,9 +8,9 @@ jobs:
         id: printvar
         run: echo "temp=actions" >> $GITHUB_OUTPUT
       - name:  print the output
-        env:
-          outputvar: ${{ steps.printvar.outputs.temp }}
-        run: echo $outputvar
+        #env:
+          #outputvar: ${{ steps.printvar.outputs.temp }}
+        run: echo ${{ steps.printvar.outputs.temp }}
           
        
         
