@@ -9,9 +9,9 @@ jobs:
       var: Helloword
     steps:
       - name: PRINT
-        run: echo $var
+        run: echo ${{ env.var }}
       - name:  access workflow var
-        run: echo $workflowvar 
+        run: echo ${{ env.workflowvar }}
        
         
   
