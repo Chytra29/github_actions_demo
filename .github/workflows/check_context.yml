@@ -1,12 +1,12 @@
 name: envvars
 on:  [push]
 env:
-  workflowvar: ${{ github.actor }}
+  workflowvar: Good morning
 jobs:
   myjob:
     runs-on: ubuntu-latest
     env:
-      var: Helloword
+      var: Chytra
     steps:
       - name: PRINT
         run: echo ${{ env.var }}
